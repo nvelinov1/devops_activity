@@ -8,4 +8,4 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 EXPOSE 5010
 COPY . .
-CMD ["flask", "run", "--debug"]
+CMD ["python3", "-u", "app.py"]
