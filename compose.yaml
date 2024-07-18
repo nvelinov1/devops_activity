@@ -3,5 +3,9 @@ services:
     build: ./web
     ports:
       - "8000:5000"
+  monitoring:
+    build: ./monitoring
+    ports:
+      - "8010:5010"
   redis:
     image: "redis:alpine"
