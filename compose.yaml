@@ -14,7 +14,7 @@ services:
     ports:
      - "25:25"
     environment:
-      - SMARTHOST_ADDRESS=mail.mysmtp.com
-      - SMARTHOST_USER=myuser
-      - SMARTHOST_PASSWORD=secret
-      - SMARTHOST_ALIASES=*.mysmtp.com
+      - SMARTHOST_ADDRESS=${SMARTHOST_ADDRESS}
+      - SMARTHOST_USER=${SMARTHOST_USER}
+      - SMARTHOST_PASSWORD=${SMARTHOST_PASSWORD}
+      - SMARTHOST_ALIASES=${SMARTHOST_ALIASES}
